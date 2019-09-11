@@ -18,7 +18,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <PokeList pokemons={this.state.pokemons} />
+        <h1 className="title">Mi lista Pokémon</h1>
+        <div className="container__pokemon">
+          <PokeList pokemons={this.state.pokemons} />
+        </div>
       </div>
     )
   }
