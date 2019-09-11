@@ -7,7 +7,7 @@ const Pokemon = function (props) {
 
     const renderPokemonTypes = () => {
         return pokemonTypes.map((pokemonType, index) => {
-            return <li key={index}>{pokemonType}</li>
+            return <li className="pokemon_type" key={index}>{pokemonType}</li>
         })
     }
     console.log(pokemonTypes)
@@ -15,7 +15,7 @@ const Pokemon = function (props) {
         <li className="pokemon_item">
             <img className="pokemon_image" src={props.pokemon.url} alt={props.pokemon.name}></img>
             <h2 className="pokemon_title">{props.pokemon.name}</h2>
-            <ul>
+            <ul className="pokemon_type_list">
                 {renderPokemonTypes()}
             </ul>
         </li>
