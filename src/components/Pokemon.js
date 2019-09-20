@@ -1,5 +1,5 @@
 import React from 'react'
-import './Pokemon.css'
+import './../stylesheets/Pokemon.css'
 
 
 const Pokemon = function (props) {
@@ -12,13 +12,13 @@ const Pokemon = function (props) {
     }
     console.log(pokemonTypes)
     return (
-        <li className="pokemon_item">
-            <img className="pokemon_image" src={props.pokemon.url} alt={props.pokemon.name}></img>
+        <div>
+            <img className="pokemon_image" src={props.pokemon.url} alt={props.pokemon.name} />
             <h2 className="pokemon_title">{props.pokemon.name}</h2>
             <ul className="pokemon_type_list">
                 {renderPokemonTypes()}
             </ul>
-        </li>
+        </div>
     )
 }
 

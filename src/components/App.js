@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
-import pokemonData from './pokemondata'
-import PokeList from './components/PokeList'
+import './../stylesheets/App.css';
+import pokemonData from '../pokemondata'
+import PokeList from './PokeList'
 
 console.log(pokemonData);
 

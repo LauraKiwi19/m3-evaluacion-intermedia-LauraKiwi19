@@ -1,15 +1,15 @@
 import React from 'react';
 import Pokemon from './Pokemon'
-import './PokeList.css'
+import './../stylesheets/PokeList.css'
 
 
 const PokeList = function (props) {
     console.log(props)
     return (
         <ul className="container_pokemon_list">
-            {props.pokemons.map((pokemon, index) => {
+            {props.pokemons.map((pokemon) => {
                 return (
-                    <Pokemon key={index} pokemon={pokemon} />
+                    <li className="pokemon_item" key={pokemon.id}> <Pokemon pokemon={pokemon} /></li>
                 )
             })}
         </ul>)
